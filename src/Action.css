@@ -1,0 +1,234 @@
+/* =====================================
+   SECTION NOS ACTIONS
+===================================== */
+
+.Nos_Action {
+  width: 100%;
+  background-color: #fbf5f5;
+  padding: 80px 20px 70px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Conteneur principal */
+
+.Nos_Action .container-fluid {
+  width: 100%;
+  max-width: 1168px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* =====================================
+   DESCRIPTION ET TITRE
+===================================== */
+
+.Nos_Action .description {
+  margin-bottom: 42px;
+}
+
+.Nos_Action .description span {
+  display: inline-block;
+  color: #f52d78;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.Nos_Action .description p {
+  color: #171414;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin: 0;
+  max-width: 650px;
+}
+
+/* =====================================
+   CONTENEUR DES TROIS CARTES
+===================================== */
+
+.Nos_Action .carte {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* =====================================
+   STYLE COMMUN DES CARTES
+===================================== */
+
+.atelier_numerique,
+.mentorat_confiance,
+.leadership {
+  width: 100%;
+  min-width: 0;
+  background-color: #ffffff;
+  border: 1px solid #e9e2e2;
+  border-radius: 28px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Animation au survol */
+
+.atelier_numerique:hover,
+.mentorat_confiance:hover,
+.leadership:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* =====================================
+   IMAGES DES CARTES
+===================================== */
+
+.atelier_numerique img,
+.mentorat_confiance img,
+.leadership img {
+  display: block;
+  width: 100%;
+  height: 278px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* =====================================
+   ICONES
+===================================== */
+
+.atelier_numerique svg,
+.mentorat_confiance svg,
+.leadership svg {
+  width: 46px;
+  height: 46px;
+  padding: 12px;
+  box-sizing: border-box;
+
+  color: #ffffff;
+  background: linear-gradient(135deg, #f52d78, #ff638b);
+
+  border-radius: 50%;
+
+  margin: 24px 25px 18px;
+  flex-shrink: 0;
+}
+
+/* =====================================
+   TITRES DES CARTES
+===================================== */
+
+.atelier_numerique span,
+.mentorat_confiance span,
+.leadership span {
+  display: block;
+  color: #171414;
+  font-size: 19px;
+  font-weight: 750;
+  margin: 0 25px 10px;
+}
+
+/* =====================================
+   DESCRIPTIONS DES CARTES
+===================================== */
+
+.atelier_numerique p,
+.mentorat_confiance p,
+.leadership p {
+  color: #777171;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  margin: 0 25px 26px;
+}
+
+/* =====================================
+   RESPONSIVE : TABLETTE
+===================================== */
+
+@media screen and (max-width: 992px) {
+  .Nos_Action {
+    padding: 65px 25px;
+  }
+
+  .Nos_Action .carte {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+  }
+
+  .Nos_Action .description p {
+    font-size: 29px;
+  }
+
+  .atelier_numerique img,
+  .mentorat_confiance img,
+  .leadership img {
+    height: 240px;
+  }
+}
+
+/* =====================================
+   RESPONSIVE : TELEPHONE
+===================================== */
+
+@media screen and (max-width: 600px) {
+  .Nos_Action {
+    padding: 50px 18px;
+  }
+
+  .Nos_Action .description {
+    margin-bottom: 30px;
+  }
+
+  .Nos_Action .description span {
+    font-size: 13px;
+  }
+
+  .Nos_Action .description p {
+    font-size: 25px;
+    line-height: 1.35;
+  }
+
+  .Nos_Action .carte {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .atelier_numerique,
+  .mentorat_confiance,
+  .leadership {
+    border-radius: 22px;
+  }
+
+  .atelier_numerique img,
+  .mentorat_confiance img,
+  .leadership img {
+    height: 230px;
+  }
+
+  .atelier_numerique span,
+  .mentorat_confiance span,
+  .leadership span {
+    font-size: 18px;
+  }
+
+  .atelier_numerique p,
+  .mentorat_confiance p,
+  .leadership p {
+    font-size: 14px;
+  }
+}

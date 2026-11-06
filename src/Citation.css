@@ -1,0 +1,149 @@
+/* ================================
+   SECTION CITATION
+================================ */
+
+.citation {
+  width: 100%;
+  min-height: 408px;
+  background-color: #fdf9f7;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+/* ================================
+   CONTENU PRINCIPAL
+================================ */
+
+.citation section {
+  width: 100%;
+  max-width: 950px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  gap: 24px;
+}
+
+/* ================================
+   LOGO
+================================ */
+
+.citation .icon {
+  width: 90px;
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 0;
+}
+
+.citation .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ================================
+   TEXTE DE LA CITATION
+================================ */
+
+.citation .texte_citation {
+  width: 100%;
+}
+
+.citation .texte_citation p {
+  margin: 0;
+
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 800;
+  line-height: 1.4;
+
+  color: #171414;
+  letter-spacing: -0.7px;
+}
+
+/* MOT EN ROSE */
+
+.citation .texte_citation span {
+  color: #ed4385;
+}
+
+/* ================================
+   BADGE / NOM ASSOCIATION
+================================ */
+
+.citation .badge {
+  font-size: 16px;
+  font-weight: 400;
+
+  color: #77716f;
+  margin-top: 0;
+}
+
+/* ================================
+   RESPONSIVE TABLETTE
+================================ */
+
+@media screen and (max-width: 768px) {
+  .citation {
+    min-height: 350px;
+    padding: 50px 25px;
+  }
+
+  .citation section {
+    gap: 20px;
+  }
+
+  .citation .icon {
+    width: 75px;
+    height: 70px;
+  }
+
+  .citation .texte_citation p {
+    font-size: 27px;
+    letter-spacing: -0.4px;
+  }
+
+  .citation .badge {
+    font-size: 15px;
+  }
+}
+
+/* ================================
+   RESPONSIVE MOBILE
+================================ */
+
+@media screen and (max-width: 480px) {
+  .citation {
+    min-height: 320px;
+    padding: 40px 18px;
+  }
+
+  .citation section {
+    gap: 18px;
+  }
+
+  .citation .icon {
+    width: 65px;
+    height: 60px;
+  }
+
+  .citation .texte_citation p {
+    font-size: 23px;
+    line-height: 1.45;
+    letter-spacing: -0.3px;
+  }
+
+  .citation .badge {
+    font-size: 13px;
+  }
+}
