@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function CodHerBus(){
     let badge_codherbus = "NOUVEAU PROJET . 2026";
-    let image_codherbus = "codHerBus.jpg";
+    let image_codherbus = "codHerBus.webp";
     return (
         <div className="codHerBus">
             <div className="badge-image">
@@ -11,7 +11,7 @@ export default function CodHerBus(){
                     <span> {badge_codherbus}  </span>
                 </div>
                 <div className="image">
-                    <ChoixImage personne={{Image : image_codherbus}} />
+                    <ChoixImage personne={{ image: image_codherbus }} status={true} />
                 </div>
             </div>
             <div className="description">

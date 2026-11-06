@@ -3,7 +3,7 @@ export default function ChoixImage({personne,status}) {
         if (status)
         {
             return(
-                <img src={getImageUrl(personne)} alt={personne} />
+                <img src={getImageUrl(personne)} alt={personne.image} />
             );
         }
             return (
