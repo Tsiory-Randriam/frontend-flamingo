@@ -6,18 +6,8 @@ import ChoixImage from './ChoixImage.jsx';
 import A_Propos from './A_propos.jsx';
 import Action from './Action.jsx';
 import Citation from './Citation.jsx';
-
+import CodHerBus from './CodHerBus.jsx';
 export default function App() {
-  //const mes_images = [
-    //{ image: 'AFF (2).png', status: true },
-    //{ image: 'AFF (3).png', status: true },
-    //{ image: 'AFF (4).png', status: true },
-    //{ image: 'AFF (5).png', status: true },
-    //{ image: 'AFF (1).png', status: true },
-  //];
-  //const listeImages = mes_images.map(personne=> (
-    //<ChoixImage personne={personne} status={true} />
-  //));
   
   return (
     <>
@@ -34,10 +24,10 @@ export default function App() {
 
           <li><a href="#apropos">A propos </a></li>
           <li><a href="#nos_action">Nos actions</a></li>
-          <li><a href="/composante">codHer-Bus</a></li>
-          <li><a href="/login">Galerie</a></li>
-          <li><a href="/login">Valeurs</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#">codHer-Bus</a></li>
+          <li><a href="#">Galerie</a></li>
+          <li><a href="#login">Valeurs</a></li>
+          <li><a href="#">Contact</a></li>
 
         </ul>
         <div className="note">

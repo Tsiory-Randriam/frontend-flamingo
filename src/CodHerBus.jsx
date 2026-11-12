@@ -1,9 +1,10 @@
 import ChoixImage from './ChoixImage.jsx';
 import { ArrowRight } from 'lucide-react';
+import './CodHerBus.css';
 
 export default function CodHerBus(){
     let badge_codherbus = "NOUVEAU PROJET . 2026";
-    let image_codherbus = "codHerBus.webp";
+    let image_codherbus = "codHerBus.web";
     return (
         <div className="codHerBus">
             <div className="badge-image">
