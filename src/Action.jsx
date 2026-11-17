@@ -14,31 +14,31 @@ export default function Action() {
         <div className="Nos_Action">
             <div className="container-fluid">
             <div className="description">
-                <span>Nos Action</span>
-                <p>Trois programmes pour un meme <br />objecif : l'épanuissement</p>
+                <span>Nos actions</span>
+                <p>Trois programmes pour un même <br />objectif : l'épanouissement</p>
             </div>
             <div className="carte">
                 <div className="atelier_numerique">
-                    <ChoixImage  personne={{image:photo.atelier}} status={true}/>
+                    <ChoixImage  personne={{ image: photo.atelier }} alt="Atelier numérique"/>
                     <Laptop/>
-                    <span>Atelier numerique</span>
-                    <p>Initiation au code ,burautique ,creation de <br />
-                    contenu de culture digital ,animés chaque mois.</p>
+                    <span>Atelier numérique</span>
+                    <p>Initiation au code ,bureautique ,creation de <br />
+                    contenu de culture digitale ,animés chaque mois.</p>
                 </div>
                 <div className="mentorat_confiance">
-                    <ChoixImage  personne={{image:photo.mentorat}} status={true}/>
+                    <ChoixImage  personne={{ image: photo.mentorat }} alt="Mentorat et confiance"/>
                     <HeartHandshake />
                     <span>Mentorat & confiance</span>
-                    <p>Un accompagnemenr de proximité : éstime de <br />
+                    <p>Un accompagnement de proximité : éstime de <br />
                     soi ,santé , orientation et projet de vie.</p>
                 </div>
                 <div className="leadership">
-                    <ChoixImage  personne={{image:photo.leadership}} status={true}/>
+                    <ChoixImage  personne={{ image: photo.leadership }} alt="Leadership et voix"/>
                     <Sparkles />
-                    <span>leadership & voix</span>
-                    <p>Prise de parole ,entrepreunariat et projets <br />
+                    <span>Leadership & voix</span>
+                    <p>Prise de parole ,entrepreneuriat et projets <br />
                     communautaires portés par les filles elles- <br />
-                    memes.</p>
+                    mêmes.</p>
                 </div>
             </div>
             </div>

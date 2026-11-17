@@ -3,8 +3,8 @@ import { ArrowRight } from 'lucide-react';
 import './CodHerBus.css';
 
 export default function CodHerBus(){
-    let badge_codherbus = "NOUVEAU PROJET . 2026";
-    let image_codherbus = "codHerBus.web";
+    const badge_codherbus = "NOUVEAU PROJET . 2026";
+    const image_codherbus = "codHerBus.webp";
     return (
         <div className="codHerBus">
             <div className="badge-image">
@@ -12,7 +12,7 @@ export default function CodHerBus(){
                     <span> {badge_codherbus}  </span>
                 </div>
                 <div className="image">
-                    <ChoixImage personne={{ image: image_codherbus }} status={true} />
+                    <ChoixImage personne={{ image: image_codherbus }} alt="Le bus CodHer-Bus, salle de formation mobile" />
                 </div>
             </div>
             <div className="description">
@@ -22,12 +22,12 @@ export default function CodHerBus(){
                 </div>
                 <div className="texte">
                     <p>CodHer-Bus est une initiative éducative itinérante qui utilise un bus <br />
-                    aménagé comme salle de formatio mobile. Nous allons intervernir dans <br />
-                    des zones rurales et semi-rurales ou les jeunes filles ont trés peu d'acces <br />aux ordinateures
+                    aménagé comme salle de formation mobile. Nous allons intervenir dans <br />
+                    des zones rurales et semi-rurales où les jeunes filles ont très peu d'accès <br />aux ordinateurs
                     , à Internet et aux formations en technologies .</p>
                 </div>
-                <div className="citation">
-                    Apprenre . coder . Innover .Partout
+                <div className="codherbus-citation">
+                    Apprendre. Coder. Innover. Partout.
                 </div>
                 <div className="soutenier">
                     <button>Soutenir CodHer-Bus <ArrowRight /> </button>

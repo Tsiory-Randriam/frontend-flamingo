@@ -9,5 +9,9 @@ const images = import.meta.glob('./assets/image/*.{png,jpg,jpeg,webp,svg,gif}', 
 
 export default function getImageUrl(person) {
   const nom = person?.image;
-  return images['./assets/image/' + nom] ?? '';
+  const url = images['./assets/image/' + nom];
+  if (!url && import.meta.env.DEV) {
+    console.warn(`[getImageUrl] Image introuvable : "${nom}"`);
+  }
+  return url ?? '';
 }
