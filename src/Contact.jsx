@@ -87,7 +87,7 @@ export default function Contact() {
         </a>
 
         {/* Adresse */}
-        <a href="#" className="contact-card">
+        <a href="https://www.google.com/maps/place/Avaratsena/@-19.8730725,47.0287702,21z/data=!4m6!3m5!1s0x21e50f002f0c0f5f:0xc4e5e57e0d9ac314!8m2!3d-19.8730303!4d47.0291109!16s%2Fg%2F11z2hjthmb?hl=en_au&entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D" className="contact-card">
           <div className="contact-icon">
             <MapPin size={19} />
           </div>
