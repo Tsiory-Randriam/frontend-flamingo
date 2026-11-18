@@ -13,7 +13,7 @@ export default function Hero() {
                     <span> GIRLS FOR CHANGE - ANTSIRABE </span>
                 </div>
                 <div className="titre">
-                    <p>Les jeunes filles au <br />coeur de la <br /> <span>révolution <br />numérique</span></p>
+                    <p style={{fontSize: '50px'}}>Les jeunes filles au <br />coeur de la <br /> <span>révolution <br />numérique</span></p>
                 </div>
                 <div className="texte">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br /> Voluptates, odit voluptatem! Quisquam quam, nemo fuga quae <br /> recusandae labore doloremque obcaecati odit dolores <br />    </p>
