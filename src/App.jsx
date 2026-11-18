@@ -7,7 +7,7 @@ import A_Propos from './A_propos.jsx';
 import Action from './Action.jsx';
 import Citation from './Citation.jsx';
 import SendEmail from './components/SendEmail.jsx';
-import Contact from './Contact.jsx';
+
 export default function App() {
   return (
     <>
@@ -65,9 +65,6 @@ export default function App() {
         </div>
         <div id="citation">
           <Citation />
-        </div>
-        <div className="section-contact">
-          <Contact />
         </div>
         <div id="contact" className="contact">
           <SendEmail />
