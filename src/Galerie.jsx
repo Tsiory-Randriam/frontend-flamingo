@@ -51,6 +51,7 @@ function Galerie() {
       id="galerie"
       aria-labelledby="galerie-title"
       className="galerie w-full overflow-hidden white px-5 py-20 sm:px-8 lg:px-16"
+      style={{backgroundColor:'whitesmoke'}}
     >
       {/* En-tête */}
       <div className="mx-auto mb-14 max-w-7xl">
@@ -62,8 +63,8 @@ function Galerie() {
           Des moments qui nous rassemblent
         </h2>
 
-        <p className="mx-auto mt-4 max-w-2xl leading-7 text-gray-400 sm:text-base">
-          
+        <p style={{fontSize:'12px',color:'pink'}}>
+            Un defilé de nos ateliers , de notre equipe et des reussites de nos participantes
         </p>
       </div>
 
@@ -85,10 +86,9 @@ function Galerie() {
 
                   <figcaption className="absolute bottom-0 left-0 w-full p-5">
                     {/* translate seulement sur appareils avec hover */}
-                    <p className="text-lg font-semibold text-white transition-all duration-300 [@media(hover:hover)]:translate-y-3 [@media(hover:hover)]:group-hover:translate-y-0">
+                    <p className="text-lg text-white transition-all duration-300 [@media(hover:hover)]:translate-y-3 [@media(hover:hover)]:group-hover:translate-y-0" style={{fontSize:'12px'}}>
                       {d.description}
                     </p>
-                    <div className="mt-2 h-1 w-10 rounded-full bg-pink-500 transition-all duration-300 group-hover:w-20" />
                   </figcaption>
                 </div>
               </figure>

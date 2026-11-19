@@ -9,6 +9,8 @@ import Citation from './Citation.jsx';
 import SendEmail from './components/SendEmail.jsx';
 import Contact from './Contact.jsx';
 import Galerie from './Galerie.jsx';
+import CodHerBus from './CodHerBus.jsx';
+import Steaminist from './Steaminist.jsx';
 
 export default function App() {
   return (
@@ -67,6 +69,12 @@ export default function App() {
         </div>
         <div id="citation">
           <Citation />
+        </div>
+        <div id="CodherBus">
+          <CodHerBus />
+        </div>
+        <div id="steamnist">
+          <Steaminist />
         </div>
         <div id="galerie">
           <Galerie />

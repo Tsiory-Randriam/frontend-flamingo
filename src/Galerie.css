@@ -1,7 +1,3 @@
-/* Flèches */
-section {
-  background-color: whitesmoke;
-}
 .galerie .slick-prev,
 .galerie .slick-next {
   width: 40px;
@@ -28,12 +24,12 @@ section {
 
 /* Points */
 .galerie .slick-dots li button:before {
-  color: #9ca3af;
+  color: white;
   opacity: 0.5;
   font-size: 10px;
 }
 .galerie .slick-dots li.slick-active button:before {
-  color: #ec4899;
+  color: white;
   opacity: 1;
 }
 #galerie-title {
