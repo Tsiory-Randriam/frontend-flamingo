@@ -8,6 +8,8 @@ import Action from './Action.jsx';
 import Citation from './Citation.jsx';
 import SendEmail from './components/SendEmail.jsx';
 import Contact from './Contact.jsx';
+import Galerie from './Galerie.jsx';
+
 export default function App() {
   return (
     <>
@@ -65,6 +67,9 @@ export default function App() {
         </div>
         <div id="citation">
           <Citation />
+        </div>
+        <div id="galerie">
+          <Galerie />
         </div>
         <div id="contact">
           <Contact />
